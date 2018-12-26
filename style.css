@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.circle{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border-radius: 40%;
+    animation: animate 2s infinite;
+    box-shadow: 70px 70px 0 #ff6b6b,
+                -70px 70px 0 #feca57,
+                70px -70px 0 #54a0ff,
+                -70px -70px 0 #1dd1a1,
+                  0px 85px 0 #ff9ff3,
+                  0px -85px 0 #00d2d3,
+                  -85px 0px 0 #8395a7,
+                85px 0px 0 #c8d6e5;
+                
+}
+
+@keyframes animate{
+    0%{
+        box-shadow: 0px 0px 0 #ff6b6b,
+                   0px 0px 0 #feca57,
+                   0px 0px 0 #54a0ff,
+                   0px 0px 0 #1dd1a1,
+                   0px 0px 0 #ff9ff3,
+                   0px 0px 0 #00d2d3,
+                   0px 0px 0 #8395a7,
+                   0px 0px 0 #c8d6e5;
+     transform: rotate(0deg);             
+
+    }
+    25%{
+        box-shadow: 70px 70px 0 #ff6b6b,
+                -70px 70px 0 #feca57,
+                70px -70px 0 #54a0ff,
+                -70px -70px 0 #1dd1a1,
+                  0px 85px 0 #ff9ff3,
+                  0px -85px 0 #00d2d3,
+                  -85px 0px 0 #8395a7,
+                85px 0px 0 #c8d6e5;
+     transform: rotate(360deg);           
+    }
+    75%{
+        box-shadow: 70px 70px 0 #ff6b6b,
+                -70px 70px 0 #feca57,
+                70px -70px 0 #54a0ff,
+                -70px -70px 0 #1dd1a1,
+                  0px 85px 0 #ff9ff3,
+                  0px -85px 0 #00d2d3,
+                  -85px 0px 0 #8395a7,
+                85px 0px 0 #c8d6e5;
+         transform: rotate(720deg);      
+    }
+    100%{
+        box-shadow: 0px 0px 0 #ff6b6b,
+                   0px 0px 0 #feca57,
+                   0px 0px 0 #54a0ff,
+                   0px 0px 0 #1dd1a1,
+                   0px 0px 0 #ff9ff3,
+                   0px 0px 0 #00d2d3,
+                   0px 0px 0 #8395a7,
+                   0px 0px 0 #c8d6e5;
+        transform: rotate(1430deg);          
+
+    }
+}
